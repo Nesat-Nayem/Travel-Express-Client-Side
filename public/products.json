@@ -1,0 +1,130 @@
+[
+    {
+        "key": "B002RL8IYK",
+        "_id": "60795d4e0489a32f9t48c98hjfdyu4167",
+        
+        "name": "Koh Samui",
+        "location": "Europe",
+        "price": "700",
+
+        "description": "Ko Samui, Thailand’s second largest island, lies in the Gulf of Thailand off the east coast of the Kra Isthmus. It's known for its palm-fringed beaches, coconut groves and dense, mountainous rainforest, plus luxury resorts and posh spas.",
+        
+        "star": 5,
+        
+        "img": "http://www.nicdarkthemes.com/themes/travel/wp/demo/summer-holiday/wp-content/uploads/sites/4/2018/03/package-01-1024x640.jpg"
+    },
+    {
+        "key": "B01K1IO3QW",
+        "_id": "60795d4e0489a32ff948c98hjwfdyu4167",
+
+        "name": "Seychelles",
+        "location": "Netherlands",
+        "price": "1500",
+
+        "description": "The Seychelles is an archipelago of 115 islands in the Indian Ocean, off East Africa. It's home to numerous beaches, coral reefs and nature reserves, as well as rare animals such as giant Aldabra tortoises. Mahé, a hub for visiting the other islands,",
+        
+       
+       
+        "star": 4,
+        
+        "img": "http://www.nicdarkthemes.com/themes/travel/wp/demo/summer-holiday/wp-content/uploads/sites/4/2018/03/package-05-1024x640.jpg"
+        
+    },
+    {
+        "key": "B01LD4MGY4",
+        "_id": "60795d4e0489a32f948c98fdyu4167",
+
+        "name": "Hawaii",
+        "location": "Italy",
+        "price": "730",
+
+        "description": "It’s somewhere that becomes part of you if you are open to it, and it definitely became more than simply a place for me. The landscapes, people, nature, lifestyle, wildlife, and adventures were an absolute dream and I am proud to say that I lived it to the fullest.",
+  
+     
+       
+        "star": 4,
+     
+        "img": "http://www.nicdarkthemes.com/themes/travel/wp/demo/summer-holiday/wp-content/uploads/sites/4/2018/03/package-06-1024x640.jpg"
+        
+    },
+    {
+        "key": "B01M18UZF5",
+        "_id": "607tr95d4e0489a32f948c98hjfdyu4167",
+
+        "name": "Berlin",
+        "location": "Europe",
+        "price": "700",
+
+        "description": "Berlin, Germany’s capital, dates to the 13th century. Reminders of the city's turbulent 20th-century history include its Holocaust memorial and the Berlin Wall's graffitied remains. Divided during the Cold War, its 18th-century Brandenburg Gate has become a symbol of reunification.",
+      
+        
+        "star": 4,
+    
+        "img": "http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-1-1024x640.jpg"
+        
+    },
+    {
+        "key": "B01DBGVB7K",
+        "_id": "60795d4e0489a32f948c98htrjfdyu4167",
+
+        
+        "location": "Italy",
+        "price": "700",
+
+        "description": "Tuscany is a region in central Italy. Its capital, Florence, is home to some of the world’s most recognizable Renaissance art and architecture, including Michelangelo’s statue, Botticelli’s works in the Uffizi Gallery and the Duomo basilica.",
+      
+        "name": "Tuscany",
+       
+        "star": 5,
+       
+        "img": "http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/package-5-1024x640.jpg"
+    },
+    {
+        "key": "B01DBGVBh7K",
+        "_id": "60795d4e0489a32f948cf98htrjfdyu4167",
+
+        "name": "Hong Kong",
+        "location": "Asia",
+        "price": "700",
+
+        "description": "Hong Kong, officially the Hong Kong Special Administrative Region of the People's Republic of China, is a city and special administrative region of China on the eastern Pearl River Delta in the South.",
+    
+        
+       
+        "star": 5,
+      
+        "img": "http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/package-6-1024x640.jpg"
+    },
+    {
+        "key": "B01DgBGVB7K",
+        "_id": "60795d4e0489a32f948c98htrjdfdyu4167",
+
+       
+        "location": "United States",
+        "price": "700",
+
+        "description": "San Francisco, officially the City and County of San Francisco, is a cultural, commercial, and financial center in the U.S. state of California",
+    
+        "name": "San Francisco",
+       
+        "star": 4,
+       
+        "img": "http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-2-1024x640.jpg"
+    },
+    {
+        "key": "B01DgBGfdVB7K",
+        "_id": "60795d4e0489a32f948c98htrjdfredyu4167",
+
+       
+        "location": "Thailandia",
+        "price": "700",
+
+        "description": "Phuket City, on Phuket Island, is the capital of Thailand’s Phuket Province. In the Old Town, Thalang Road is lined with colorful 19th-century shophouses and Sino-Portuguese buildings",
+      
+        "name": "Phuket",
+      
+        "star": 5,
+     
+        "img": "http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-3-1024x640.jpg"
+    }
+]
