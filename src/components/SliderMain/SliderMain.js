@@ -13,10 +13,10 @@ const SliderMain = () => {
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/04/parallax-2.jpg" class="d-block w-100" alt="..."/>
+                <img src="https://i.ibb.co/Z2f3zLy/slider-1.jpg" class="d-block w-100" alt="..."/>
                 </div>
                 <div class="carousel-item">
-                <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/04/p-17.jpg" class="d-block w-100" alt="..."/>
+                <img src="https://i.ibb.co/X3YBTbM/slider-2.jpg" class="d-block w-100" alt="..."/>
                 </div>
                 
             </div>

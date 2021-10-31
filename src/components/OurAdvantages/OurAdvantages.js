@@ -9,7 +9,7 @@ const OurAdvantages = () => {
     // Loading Data 
     useEffect(() => {
         
-        fetch('./doctor.json')
+        fetch('./OurAdvantages.json')
 
             .then(res => res.json())
                 
