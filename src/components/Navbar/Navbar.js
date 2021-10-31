@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div className="container">
                     <div className="d-flex">
                        
-                        <h1 className="navbar-brand site_name">tour express</h1>
+                        <h1 className="navbar-brand site_name">Tour Express</h1>
                     </div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
