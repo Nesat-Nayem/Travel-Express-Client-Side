@@ -38,7 +38,7 @@ const Navbar = () => {
                                 { user.email?
                                 <Link to="/inventory"
                                 className="nav-link fw-bold"
-                                >Manage All Event</Link>: <div></div>
+                                >Manage Packages</Link>: <div></div>
 
                                 }
                                 
@@ -46,9 +46,9 @@ const Navbar = () => {
 
 
                                 { user.email?
-                                <Link to="/AddEvent"
+                                <Link to="/AddPackage"
                                 className="nav-link fw-bold"
-                                >Add A New Event </Link>: <div></div>
+                                >Add Package </Link>: <div></div>
 
                                 }
 

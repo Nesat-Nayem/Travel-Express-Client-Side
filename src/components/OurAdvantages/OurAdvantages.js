@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import './Doctor.css'
-import DoctorCard from '../DoctorCard/DoctorCard';
+import './OurAdvantages.css'
+import OurAdvantagesCard from '../OurAdvantagesCard/OurAdvantagesCard';
 
-const Doctor = () => {
+const OurAdvantages = () => {
 
-    const [Doctors, setDoctors] = useState([]);
+    const [OurAdvantages, setOurAdvantages] = useState([]);
     
     // Loading Data 
     useEffect(() => {
@@ -13,7 +13,7 @@ const Doctor = () => {
 
             .then(res => res.json())
                 
-            .then(reviews => setDoctors(reviews))               
+            .then(reviews => setOurAdvantages(reviews))               
             
          }, [])
 
@@ -29,7 +29,7 @@ const Doctor = () => {
                 <div className="row">
                                                   
                     {
-                        Doctors.map(Doctor => <DoctorCard Doctor={Doctor}></DoctorCard>)
+                        OurAdvantages.map(OurAdvantage => <OurAdvantagesCard OurAdvantage={OurAdvantage}></OurAdvantagesCard>)
                     }
                 </div>
             </div>
@@ -37,4 +37,4 @@ const Doctor = () => {
     );
 };
 
-export default Doctor;
+export default OurAdvantages;

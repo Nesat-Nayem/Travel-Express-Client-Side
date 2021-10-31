@@ -1,17 +1,17 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../hooks/useAuth';
-import { clearTheCart, getStoredCart } from '../../utilities/fakedb';
+// import { clearTheCart, getStoredCart } from '../../utilities/fakedb';
 import './Shipping.css';
 
 const Shipping = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const { user } = useAuth();
     const onSubmit = data => {
-        const savedCart = getStoredCart();
-        data.order = savedCart;
+        // const savedCart = getStoredCart();
+        // data.order = savedCart;
         
-        fetch('http://localhost:5000/orders', {
+        fetch('https://chilling-citadel-66740.herokuapp.com/orders', {
             method: 'POST',
             headers:{
                 'content-type': 'application/json'
@@ -20,9 +20,10 @@ const Shipping = () => {
         })
         .then(res => res.json())
         .then(result => {
-           if(result.insertedId){
-               alert('order process successfully');
-               clearTheCart();
+            // console.log(result);
+           if (result.insertedId) {
+               alert('Congreds!!!! you are now part of our tore member');
+            //    clearTheCart();
                reset();
            }
         })
@@ -39,7 +40,7 @@ const Shipping = () => {
                 <input placeholder="City" defaultValue="" {...register("city")} />
                 <input placeholder="phone number" defaultValue="" {...register("phone")} />
 
-                <input type="submit" />
+                <input type="submit" value="conform" />
             </form>
         </div>
     );

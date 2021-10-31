@@ -1,8 +1,9 @@
 import React from 'react';
-import './DoctorCard.css'
-const DoctorCard = (props) => {
-
-    const { name,positon, photoURL } = props.Doctor;
+import './OurAdvantagesCard.css'
+// const DoctorCard = (props) => {
+const OurAdvantagesCard = (props) => {
+    
+    const { name,positon, photoURL } = props.OurAdvantage;
 
     return (
         <div className="mb-3 col-lg-3 col-sm-6">
@@ -20,4 +21,4 @@ const DoctorCard = (props) => {
     );
 };
 
-export default DoctorCard;
+export default OurAdvantagesCard;

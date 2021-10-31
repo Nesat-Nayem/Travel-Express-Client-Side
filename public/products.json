@@ -1,7 +1,7 @@
 [
     {
         "key": "B002RL8IYK",
-        "_id": "60795d4e0489a32f9t48c98hjfdyu4167",
+       
         
         "name": "Koh Samui",
         "location": "Europe",
@@ -15,7 +15,7 @@
     },
     {
         "key": "B01K1IO3QW",
-        "_id": "60795d4e0489a32ff948c98hjwfdyu4167",
+       
 
         "name": "Seychelles",
         "location": "Netherlands",
@@ -32,7 +32,7 @@
     },
     {
         "key": "B01LD4MGY4",
-        "_id": "60795d4e0489a32f948c98fdyu4167",
+        
 
         "name": "Hawaii",
         "location": "Italy",
@@ -49,8 +49,7 @@
     },
     {
         "key": "B01M18UZF5",
-        "_id": "607tr95d4e0489a32f948c98hjfdyu4167",
-
+       
         "name": "Berlin",
         "location": "Europe",
         "price": "700",
@@ -65,7 +64,7 @@
     },
     {
         "key": "B01DBGVB7K",
-        "_id": "60795d4e0489a32f948c98htrjfdyu4167",
+       
 
         
         "location": "Italy",
@@ -81,7 +80,7 @@
     },
     {
         "key": "B01DBGVBh7K",
-        "_id": "60795d4e0489a32f948cf98htrjfdyu4167",
+      
 
         "name": "Hong Kong",
         "location": "Asia",
@@ -97,8 +96,7 @@
     },
     {
         "key": "B01DgBGVB7K",
-        "_id": "60795d4e0489a32f948c98htrjdfdyu4167",
-
+       
        
         "location": "United States",
         "price": "700",
@@ -113,8 +111,7 @@
     },
     {
         "key": "B01DgBGfdVB7K",
-        "_id": "60795d4e0489a32f948c98htrjdfredyu4167",
-
+        
        
         "location": "Thailandia",
         "price": "700",

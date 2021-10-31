@@ -13,26 +13,6 @@ const Product = (props) => {
     return (
         <div className="product">
 
-            {/* bootstrap card */}
-
-          
-            {/* <div class="mb-5 col-lg-4 col-sm-6">
-                <div className="card shadow-lg w-100 h-100 text-center rounded ServicsCard">
-                    <div className="d-flex justify-content-center align-items-center h-75 p-2">
-                        <img src={img} className="card-img-top h-75 w-75" alt="" />
-                    </div>
-                    <div className="card-body">
-                        <h5 className="card-title">{name}</h5>
-                        <p>{price}</p>
-                    
-                
-                
-                    </div>
-
-                </div>
-                
-                </div> */}
-
                 {/* bootstrap card */}
          
                 <div class="card mb-3">
@@ -44,26 +24,27 @@ const Product = (props) => {
                         <div class="card-body">
                             <h5 class="card-title">{name}</h5>
                             <p><i class="fas fa-map-marker-alt"></i>  {location}</p>
-                            
-                            <p class="card-text">{description}</p>
-                            <h2>$ {price}</h2>
+
                             <Rating
-                    initialRating={star}
-                    emptySymbol="far fa-star icon-color"
-                    fullSymbol="fas fa-star icon-color"
-                    readonly></Rating>
+                                initialRating={star}
+                                emptySymbol="far fa-star icon-color"
+                                fullSymbol="fas fa-star icon-color"
+                                readonly>
+
+                            </Rating>
+
+                            
+                            <p class="card-text mt-4">{description}</p>
+                            <h2>$ {price}</h2>
+                            
                            
 
-                     <div className="d-flex justify-content-between ">
-                            
-                    <button
-                    onClick={() => props.handleAddToCart(props.product)}
-                    className="btn bg-color ms-5"
-                     ><FontAwesomeIcon icon={faShoppingCart} /> Booking</button>
+                     <div className="d-flex justify-content-end ">
+                 
 
 
                     <Link to={`/servicesdetail/${_id}`}>
-                        <button className="btn bg-color2 ms-5">View Details</button>         
+                        <button className="btn bg-color ms-5">Booking</button>         
                     </Link>
 
                     </div>
@@ -76,31 +57,7 @@ const Product = (props) => {
                     </div>
                 </div>
 
-            {/* bootstrap card */}
-            {/* <div>
-                <img className="product-img" src={img} alt="" />
-            </div>
-            <div>
-                <h4 className="product-name">{name}</h4>
-                <p><small className="text-danger">by: {shortdes}</small></p>
-                
-                <p><small>only {description} left in stock - order soon</small></p>
-                <Rating
-                    initialRating={star}
-                    emptySymbol="far fa-star icon-color"
-                    fullSymbol="fas fa-star icon-color"
-                    readonly></Rating>
-                <br />
-                <button
-                    onClick={() => props.handleAddToCart(props.product)}
-                    className="btn-regular"
-                ><FontAwesomeIcon icon={faShoppingCart} /> add to cart</button>
-
-                    <Link to={`/servicesdetail/${_id}`}>
-                    <h6 className="btn text-info">View Details <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></h6>         
-                    </Link>
-            </div> */}
-
+           
 
         </div>
     );

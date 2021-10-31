@@ -1,44 +1,60 @@
 import React from 'react';
-import useProducts from '../../hooks/useProducts';
-import useCart from '../../hooks/useCart';
-import Cart from '../Cart/Cart';
-import ReviewItem from '../ReviewItem/ReviewItem';
-import { clearTheCart, removeFromDb } from '../../utilities/fakedb';
-import { useHistory } from 'react-router';
+import { useEffect } from 'react';
+import { useState } from 'react';
+
 
 const OrderReview = () => {
-    
-    const [cart, setCart] = useCart();
-    const history = useHistory();
 
-    const handleRemove = key => {
-        const newCart = cart.filter(product => product.key !== key);
-        setCart(newCart);
-        removeFromDb(key);
-    }
+ 
+    const [orderReview,setOrderReview] = useState([])
 
-    const handleProceedToShipping = () => {
-        // setCart([]);
-        // clearTheCart();
-        history.push('/shipping');
+    useEffect(()=>{
+        fetch('https://chilling-citadel-66740.herokuapp.com/orders')
+        .then(res => res.json())
+        .then(data => setOrderReview(data))
+    }, []);
+
+    const handleDelete = id => {
+        
+        fetch(`https://chilling-citadel-66740.herokuapp.com/orders/${id}`, {
+            method : 'DELETE'
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if(data.deletedCount){
+                alert('deleted')
+                const remaining = orderReview.filter(order => order._id !==id);
+            setOrderReview(remaining)
+            }
+            
+        })
     }
 
     return (
-        <div className="shop-container">
-            <div className="product-container">
-                {
-                    cart.map(product => <ReviewItem
-                        key={product.key}
-                        product={product}
-                        handleRemove={handleRemove}
-                    ></ReviewItem>)
-                }
-            </div>
-            <div className="cart-container">
-                <Cart cart={cart}>
-                    <button onClick={handleProceedToShipping} className="btn-regular">Proceed to Shipping</button>
-                </Cart>
-            </div>
+        <div>
+            
+
+            {
+                        orderReview.map(order => 
+                            <div key={order._id}> 
+
+
+                           
+                            <p>{order.name}</p> 
+                            <p>{order.email}</p>
+                            <p>{order.address}</p>
+                            <h3>{order.city}</h3>
+                            <h3>{order.phone}</h3>
+
+                            <button onClick={()=>handleDelete(order._id)}>delete order</button>
+                            
+                            </div>
+                        
+                      
+                        
+                        )
+                    }
         </div>
     );
 };

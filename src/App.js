@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header/Header';
+
 import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import OrderReview from './components/OrderReview/OrderReview';
-import PlaceOrder from './components/PlaceOrder/PlaceOrder';
+// import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
@@ -14,6 +14,7 @@ import Shop from './components/Shop/Shop';
 import AuthProvider from './context/AuthProvider';
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar';
+import AddPackage from './components/AddPackage/AddPackage';
 
 function App() {
   return (
@@ -34,17 +35,26 @@ function App() {
             <Route path="/review">
               <OrderReview></OrderReview>
             </Route>
+
+            <Route path="/addpackage">
+              <AddPackage></AddPackage>
+            </Route>
+
+           
+
             <PrivateRoute path="/inventory">
               <Inventory></Inventory>
             </PrivateRoute>
+
+
             <PrivateRoute path="/shipping">
               <Shipping></Shipping>
             </PrivateRoute>
 
-
+{/* 
             <PrivateRoute path="/placeorder">
               <PlaceOrder></PlaceOrder>
-            </PrivateRoute>
+            </PrivateRoute> */}
             
             <PrivateRoute path="/servicesdetail/:id">
               <ServiceDetail></ServiceDetail>

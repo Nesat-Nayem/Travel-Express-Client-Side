@@ -24,25 +24,30 @@ const updateDb = cart => {
   localStorage.setItem('shopping_cart', JSON.stringify(cart));
 }
 
-const removeFromDb = id => {
-  const exists = getDb();
-  if (!exists) {
+// const removeFromDb = id => {
+//   const exists = getDb();
+//   if (!exists) {
 
+//   }
+//   else {
+//     const shopping_cart = JSON.parse(exists);
+//     delete shopping_cart[id];
+//     updateDb(shopping_cart);
+//   }
+// }
+
+// const getStoredCart = () => {
+//   const exists = getDb();
+//   return exists ? JSON.parse(exists) : {};
+// }
+
+// const clearTheCart = () => {
+//   localStorage.removeItem('shopping_cart');
+// }
+
+export { 
+  addToDb,
+  //  removeFromDb, 
+  //  clearTheCart,
+    // getStoredCart 
   }
-  else {
-    const shopping_cart = JSON.parse(exists);
-    delete shopping_cart[id];
-    updateDb(shopping_cart);
-  }
-}
-
-const getStoredCart = () => {
-  const exists = getDb();
-  return exists ? JSON.parse(exists) : {};
-}
-
-const clearTheCart = () => {
-  localStorage.removeItem('shopping_cart');
-}
-
-export { addToDb, removeFromDb, clearTheCart, getStoredCart }
