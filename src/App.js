@@ -1,11 +1,9 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-
 import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import OrderReview from './components/OrderReview/OrderReview';
-// import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
@@ -24,7 +22,7 @@ function App() {
 
           <Navbar></Navbar>
 
-          {/* <Header></Header> */}
+         
           <Switch>
             <Route exact path="/">
               <Shop></Shop>
@@ -51,10 +49,6 @@ function App() {
               <Shipping></Shipping>
             </PrivateRoute>
 
-{/* 
-            <PrivateRoute path="/placeorder">
-              <PlaceOrder></PlaceOrder>
-            </PrivateRoute> */}
             
             <PrivateRoute path="/servicesdetail/:id">
               <ServiceDetail></ServiceDetail>

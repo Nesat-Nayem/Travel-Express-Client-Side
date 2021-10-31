@@ -1,12 +1,10 @@
 import React from 'react';
 import './Navbar.css'
 import { Link } from 'react-router-dom';
-// import useAuth from '../../../hooks/useAuth';
-// import useAuth from '../../hooks/useAuth';
 import useAuth from '../../hooks/useAuth';
 const Navbar = () => {
     const {logOut, user} = useAuth();
-    // console.log(user);
+    
     return (
         <div className="container">
             <nav className="navbar navbar-expand-lg navbar-light py-5">
@@ -22,11 +20,6 @@ const Navbar = () => {
                         <div className="navbar-nav ms-auto">
 
                             <Link to="/shop" className="nav-link fw-bold">Home</Link>
-
-{/*                             
-                            <Link to="/LocationsDirections" className="nav-link fw-bold">My Events</Link> */}
-                            
-                                 {/* <Link to="/AdvancedTechnologies" className="nav-link fw-bold">Manage All Event</Link> */}
 
                                 { user.email?
                                 <Link to="/review"
@@ -61,11 +54,7 @@ const Navbar = () => {
                                 <Link to="/login">
                                 <button onClick={logOut} className="btn btn-warning me-2" >Log-out</button>
                                 </Link> 
-                                
-                                // &&
-                                //  <Link >
-                                // <button>Meadd</button>
-                                // </Link>
+                               
 
 
                                 :
@@ -73,11 +62,6 @@ const Navbar = () => {
                                 <button className="btn btn-warning me-2" >Log In</button>
                                 </Link>
                                 
-                                // &&
-                                // <Link to="/login">
-                                // <button className="btn btn-Primary me-2" >I Added Log In</button>
-                                // </Link>
-
                             }
                             
                         </div>

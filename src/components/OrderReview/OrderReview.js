@@ -65,19 +65,3 @@ const OrderReview = () => {
 };
 
 export default OrderReview;
-
-
-
-
-{/* <div className="col">
-                    <div className="card">
-                    <img className="img-fluid" src={inventory.img} alt="" />
-                    <div className="card-body d-flex justify-content-between">
-                <p>{inventory.name}</p>
-
-                <button className="butnn btn" onClick={()=> handleDelete(inventory._id)}>delete Package</button>
-                </div>
-               
-                </div>
-                
-                </div> */}

@@ -6,7 +6,7 @@ const ServiceDetail = () => {
     const {id} = useParams();
     const [data , setData] = useState([]);
     useEffect(()=>{
-        // fetch('/products.json')
+        
         fetch('https://chilling-citadel-66740.herokuapp.com/products')
 
         .then(res => res.json())
@@ -47,7 +47,6 @@ const ServiceDetail = () => {
         </div>
 
         {/* card finish */}
-
 
 
         </div>

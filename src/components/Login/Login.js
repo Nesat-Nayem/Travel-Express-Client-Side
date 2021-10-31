@@ -38,9 +38,7 @@ const Login = () => {
                     onClick={handleGoogleLogin}
                 >Google Sign In</button>
             </div>
-            {/* <div className="col-md-6">
-                <img className="img-fluid image" src="https://i.ibb.co/XJ4Q3rV/Huge-two-storeys-commercial-jetliner-taking-of-runway-Modern-and-fastest-mode-of-transportation-Dram.jpg" alt="" />
-            </div> */}
+          
         </div>
     );
 };

@@ -1,15 +1,13 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../hooks/useAuth';
-// import { clearTheCart, getStoredCart } from '../../utilities/fakedb';
+
 import './Shipping.css';
 
 const Shipping = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const { user } = useAuth();
     const onSubmit = data => {
-        // const savedCart = getStoredCart();
-        // data.order = savedCart;
         
         fetch('https://chilling-citadel-66740.herokuapp.com/orders', {
             method: 'POST',
@@ -20,10 +18,10 @@ const Shipping = () => {
         })
         .then(res => res.json())
         .then(result => {
-            // console.log(result);
+           
            if (result.insertedId) {
                alert('Congreds!!!! you are now part of our tore member');
-            //    clearTheCart();
+          
                reset();
            }
         })

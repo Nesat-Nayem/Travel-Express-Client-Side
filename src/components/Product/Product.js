@@ -1,14 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-// import './Product.css';
 import Rating from 'react-rating';
 import './Product.css'
 import { Link } from 'react-router-dom';
 
 const Product = (props) => {
-    // console.log(props);
-    const { name, img, shortdes, price, description,location, star, _id, key } = props.product;
+    
+    const { name, img, price, description,location, star, _id} = props.product;
 
     return (
         
@@ -51,9 +50,6 @@ const Product = (props) => {
                     </Link>
 
                     </div>
-
-
-                  
 
                         </div>
                         </div>

@@ -10,8 +10,7 @@ const Blog = () => {
     useEffect(() => {
         fetch('./blogs.json')
             .then(res => res.json())
-            // .then(reviews => console.log(reviews)
-          
+                    
             .then(reviews => setBlogs(reviews))
                                  
          }, [])

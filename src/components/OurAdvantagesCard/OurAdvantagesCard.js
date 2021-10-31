@@ -1,6 +1,6 @@
 import React from 'react';
 import './OurAdvantagesCard.css'
-// const DoctorCard = (props) => {
+
 const OurAdvantagesCard = (props) => {
     
     const { name,positon, photoURL } = props.OurAdvantage;
