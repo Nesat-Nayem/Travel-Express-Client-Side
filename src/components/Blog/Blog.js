@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import './Blog.css'
 import BlogCard from '../BlogCard/BlogCard';
 
 const Blog = () => {
@@ -23,7 +23,7 @@ const Blog = () => {
                
                 <div className="my-5">
                 <h5 className="text-center fw-bolder">Blogs</h5>
-                <h1 className="text-center">Recent News & <span style={{ color: '#ff4d30' }}>Advices</span></h1>
+                <h1 className="text-center">Recent <span className="color-1">News</span> & <span className="color-2">Post</span></h1>
                 </div>
                               
                 <div className="row">

@@ -8,7 +8,7 @@ import FooterQuickLinks from '../FooterQuickLinks/FooterQuickLinks';
 
 const Footer = () => {
     return (
-        <footer className="bg-danger py-5 mt-5">
+        <footer className="color-4  py-5 mt-5">
             <div className="container">
                 <div className="row d-flex justify-content-center align-items-center text-white">
                     <div className="col-md-4 d-flex">
@@ -24,7 +24,7 @@ const Footer = () => {
                     </div>
                     <div className="col-md-4">
                         <h4>About Us</h4>
-                        <p>We Are American academic medical center based in Cleveland, . Owned and operated by the Cleveland Clinic Foundation, an Ohio nonprofit corporation established in 1921,</p>
+                        <p>Tour Express is American Express Global Business Travel  multinational travel and meetings program management company headquartered in Jersey City, New Jersey, US</p>
                         
                     </div>
                 </div>

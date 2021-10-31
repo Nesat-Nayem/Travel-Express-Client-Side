@@ -32,14 +32,17 @@ const OrderReview = () => {
     }
 
     return (
-        <div>
+        <div className="row">
             
+            <h1 className="text-center">All Orders</h1>
 
             {
                         orderReview.map(order => 
                             <div key={order._id}> 
 
-
+                        <div className="card">
+                        <div className="card-body">
+                        
                            
                             <p>{order.name}</p> 
                             <p>{order.email}</p>
@@ -47,7 +50,9 @@ const OrderReview = () => {
                             <h3>{order.city}</h3>
                             <h3>{order.phone}</h3>
 
-                            <button onClick={()=>handleDelete(order._id)}>delete order</button>
+                            <button className="btn btn-danger" onClick={()=>handleDelete(order._id)}>delete order</button>
+                            </div>
+                            </div>
                             
                             </div>
                         
@@ -60,3 +65,19 @@ const OrderReview = () => {
 };
 
 export default OrderReview;
+
+
+
+
+{/* <div className="col">
+                    <div className="card">
+                    <img className="img-fluid" src={inventory.img} alt="" />
+                    <div className="card-body d-flex justify-content-between">
+                <p>{inventory.name}</p>
+
+                <button className="butnn btn" onClick={()=> handleDelete(inventory._id)}>delete Package</button>
+                </div>
+               
+                </div>
+                
+                </div> */}

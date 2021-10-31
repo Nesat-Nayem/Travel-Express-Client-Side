@@ -11,9 +11,9 @@ const OurAdvantagesCard = (props) => {
                 <div className="card-body text-start">
                     <img className="img-fluid mb-5" src={photoURL} alt="" />
                    
-                    <h3 className="card-title name-color">{name}</h3>
+                    <h6 className="card-title name-color fw-bolder">{name}</h6>
                     
-                    <h6 className="fw-bolder">{positon}</h6>
+                    <p className="fw-bolder">{positon}</p>
                 </div>
                 
             </div>

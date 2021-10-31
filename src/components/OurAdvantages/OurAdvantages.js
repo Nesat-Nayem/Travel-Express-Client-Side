@@ -22,8 +22,8 @@ const OurAdvantages = () => {
             <div className="container">
             
                 <div className="my-5 text-start">
-                <h5 className=" fw-fw-bolder activ">We are achieve the success.</h5>
-                <h1 className=" ">Why Travel with tore?</h1>
+                <h5 className=" fw-fw-bolder activ">We Tech The Next Level.</h5>
+                <h1 className=" ">Why Travel with tour express?</h1>
                 </div>
                
                 <div className="row">

@@ -11,7 +11,10 @@ const Product = (props) => {
     const { name, img, shortdes, price, description,location, star, _id, key } = props.product;
 
     return (
-        <div className="product">
+        
+        <div>
+           
+           <div className="product">
 
                 {/* bootstrap card */}
          
@@ -57,7 +60,7 @@ const Product = (props) => {
                     </div>
                 </div>
 
-           
+                </div>
 
         </div>
     );
